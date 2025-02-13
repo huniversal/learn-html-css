@@ -4,7 +4,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Hyperlink</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Hyperlink</h1>
+    <h2>Hyperlink and Img, UI example</h2>
+    <div>
+      <figure>
+        <img src="/src/assets/cafew/card-01-@2x.jpg" alt="" />
+        <figcaption>
+          <p>
+            RESPONSIVE WEB<br />
+            DESIGN STARTEGIES
+          </p>
+          <p>반응형 웹 디자인 전략</p>
+        </figcaption>
+      </figure>
+      <a href="/">강의 정보</a>
+    </div>
+    <hr />
+
+    <h2>Text Link</h2>
+    <a href="https://bootcamp.likelion.net/" target="_blank"
+      >Likelion BootCamp</a
+    >
+    <br />
+    <!-- taeget option을 통해 href 링크 클릭시 새로운 탭 생성, Strict DTD(4.01)는 허용하지 않음 -->
+    <!-- target opt중 "_"(언더바)를 사용하지 않은 "blank" 옵션을 사용하면 탭을 재활용-->
+    <!-- "_"(언더바)를 사용하면 일회성으로 새로운 탭이 계속 열림 -->
+    <a
+      href="https://www.naver.com"
+      title="Naver 사이트로 이동합니다. (new Page)"
+      target="_blank"
+      rel="noopener"
+      >Naver</a
+    >
+    <!-- title : 툴팁을 표시하며 해당 링크에 대한 추가적인 설명을 제공함 -->
+    <!-- rel : 보안 강화 및 검색 엔진 최적화에 도움이 됨 -->
+    <br />
+    <h2>Img link</h2>
+    <a href="https://www.apple.com/kr" target="_blank"
+      ><img src="/src/assets/apple/apple_watch.jpeg" alt="애플워치" width="200"
+    /></a>
+    <h2>PDF File</h2>
+    <a
+      href="/src/assets/pdf/google-seo-guide-ko.pdf"
+      download="google-seo-guide-ko.pdf"
+      >구글 SEO 가이드</a
+    ><br />
+    <h2>전화번호 또는 이메일 주소로 하이퍼 링크</h2>
+    <a href="mailto:seulbinim@gmail.com?subject=문의사항"
+      >seulbinim@gmail.com</a
+    >
+    <br />
+    <a href="tel:+821023456789">고객센터 010-2345-6789</a>
+
+    <!-- emmet 꿀팁 -->
+    <!-- 원하는 부분 드래그 -> shift + cmd + p -> 원하는 태그로 감싸기 -->
+
+    <h2><a href="/"></a>Text</h2>
+    <a href="/"><h2>Text</h2></a>
+    <!-- 블록은 인라인은 포함할 수 있지만, 인라인은 블록을 포함할 수 있다.(HTML5 버전 이전)-->
+    <!-- HTML5는 문법적으로 가능은 하지만 SEO 관점으로 봤을때는 올바르지 않은 코드이다. -->
+  </body>
 </html>
