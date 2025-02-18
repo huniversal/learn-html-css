@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video, source element</title>
+  </head>
+  <body>
+    <h1>Video, source element</h1>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/BFazDxRggck?si=0nTSZxvXK9p0zoER"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <!-- 
+      controls : 플레이어 바 표시
+      autoplay : 페이지 접속시 자동 재생
+      muted : 음소거
+      poster : 비디오 재생 전 커버 이미지(썸네일)
+    -->
+    <video controls muted poster="/src/assets/video/poster.jpg">
+      <source
+        src="/src/assets/video/google-developer-stories.mp4"
+        type="video/mp4"
+      />
+      <track
+        src="/src/assets/video/stories-en.vtt"
+        kind="captions"
+        srclang="en"
+        label="English Caption"
+      />
+      <!-- web에서 사용하는 자막 포맷 -->
+    </video>
+    <hr />
+    <!-- <video 
+      controls
+      src="/src/assets/video/google-developer-stories.mp4""
+    > </video> -->
+  </body>
+</html>
