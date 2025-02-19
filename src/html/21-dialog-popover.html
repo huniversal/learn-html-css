@@ -5,8 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dialog popover</title>
+    <style>
+      dialog.panel-dialog::backdrop {
+        background: linear-gradient(
+          135deg,
+          #ffdde1,
+          #ee9ca7,
+          #ffdde1,
+          #d4fc79,
+          #96e6a1
+        );
+        opacity: 0.85;
+      }
+    </style>
+    <script type="module">
+      const showDialogBtn = document.querySelector('.show-dialog');
+      const closeDialogBtn = document.querySelector('.close-dialog');
+      const dialog = document.querySelector('.panel-dialog');
+
+      const openDialog = () => dialog.showModal();
+      const closeDialog = () => dialog.close();
+
+      showDialogBtn.addEventListener('click', openDialog);
+      closeDialogBtn.addEventListener('click', closeDialog);
+    </script>
   </head>
   <body>
-    <h1>dialog popover</h1>
+    <h1>dialog 요소</h1>
+    <div class="dialog-area">
+      <button type="button" class="show-dialog">show modal</button>
+      <dialog class="panel-dialog" aria-labelledby="event">
+        <h2 id="event">깜짝 혜택</h2>
+        <p>모달창 내용</p>
+        <button type="button" class="close-dialog">close</button>
+      </dialog>
+    </div>
+
+    <h1>popover 속성</h1>
+    <button type="button" popovertarget="popoverContent" class="button-popover">
+      팝오버 보기
+    </button>
+    <div popover id="popoverContent">
+      <p>팝오버 내용</p>
+    </div>
   </body>
 </html>
