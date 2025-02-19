@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form (select, textarea) element</title>
+    <style>
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+      }
+      .must {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form (select, textarea) element</h1>
+    <h2>select 요소</h2>
+    <form action="/" method="post">
+      <div>
+        <label for="petSelect">반려동물</label>
+        <select name="petSelect" id="petSelect">
+          <option value="">---반려동물 선택---</option>
+          <option value="dog">강아지</option>
+          <option value="cat">고양이</option>
+          <option value="bird">새</option>
+          <option value="hamster">햄스터</option>
+          <option value="goldfish">금붕어</option>
+          <option value="parrot">패럿</option>
+        </select>
+      </div>
+    </form>
+    <h2>textarea 요소</h2>
+    <form action="/" method="post"></form>
+    <div>
+      <label for="">제목</label>
+      <input type="text" name="" id="" />
+      <label for="msg"
+        >내용
+        <span class="must" aria-hidden="true">*</span>
+        <span class="sr-only">필수</span>
+      </label>
+      <textarea
+        name="msg"
+        id="msg"
+        cols="30"
+        rows="20"
+        placeholder="msg"
+      ></textarea>
+    </div>
+  </body>
+</html>
