@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+}
+
+body {
+  color: olive;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1em;
+}
+.ai {
+  /* background-color: orange !important; */
+}
+
+body h2 + p {
+  /* background-color: yellow; */
+}
+/* 여기서 "+" 는 나의 형제, 즉 h2 번 요소의 형제 요소를 포함하여 구체적으로 명시해줌*/
+
+body p[class] {
+  /* background-color: lime; */
+}
+/* 선택자 방식 중요 다시 한번 확인하기 */
+
+#ai {
+  /* background-color: pink; */
+}
+
+.ai.copilot {
+  /* border: 10px dotted blue; */
+}
+
+a {
+  color: inherit;
+}
+/* inherit : 부모에게 상속 받는다는 뜻 */
