@@ -33,7 +33,7 @@
   /* .item:not(:first-child)::before {
     content: ' | ';
   } */
-   a:nth-child(n+2)::before {
-   background-color: red;
-   content: " | "
+  a:nth-child(n+2)::before {
+  background-color: red;
+  content: " | "
 }

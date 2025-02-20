@@ -1,7 +1,7 @@
 /* 루트 요소 */
 :root {
-  /* font-size: 10px; */
-  font-size: (12px, 3vw, 24px);
+  font-size: 25px;
+  /* font-size: (25px, 3vw, 24px); */
 }
 
 /* 글꼴 적용 */
@@ -19,7 +19,7 @@ h1 {
 /* 요소 선택자는 상속으로 인해 크기가 커질 수 있어 조심해야 함 */
 
 div {
-  font-size: 1.5em;
+  /* font-size: 0.9em; */
 }
 
 /* font 관련 속성 - 크기, 굵기, 기울임 */
