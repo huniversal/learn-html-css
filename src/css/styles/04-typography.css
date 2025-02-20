@@ -1,0 +1,40 @@
+/* 루트 요소 */
+:root {
+  /* font-size: 10px; */
+  font-size: (12px, 3vw, 24px);
+}
+
+/* 글꼴 적용 */
+body {
+  font-family: 'Pretendard Variable';
+  font-family: 'SUIT', sans-serif;
+  font-size: 1.25rem;
+}
+
+/* font-weight 속성을 적용 */
+h1 {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+/* 요소 선택자는 상속으로 인해 크기가 커질 수 있어 조심해야 함 */
+
+div {
+  font-size: 1.5em;
+}
+
+/* font 관련 속성 - 크기, 굵기, 기울임 */
+.size {
+  background-color: green;
+  /* font-size: 20px; */
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1;
+  font-variant: small-caps;
+  font-family: 'pretendard variable', sans-serif;
+  /* font:
+    bold italic small-caps 12px/1.5 'pretendard variable',
+    sans-serif; */
+  /* font에서 글자 크기와 폰트는 필수로 포함해야 함 */
+}
+
+/* 단위 - rem */
