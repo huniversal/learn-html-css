@@ -67,3 +67,15 @@ a:active {
   background-color: white;
 }
 /* a:active -> 클릭하는 순간에 색상 변경 */
+
+/* 가상 요소 선택자 */
+h1::before {
+  content: '멋사';
+}
+
+h1::after {
+  content: '13기';
+}
+/* :: -> 가상 요소 */
+/* before, after은 반드시 컨텍트 요소가 존재해야 함 */
+/* 블록박스와 인라인 박스의 차이점 알아두기 */
