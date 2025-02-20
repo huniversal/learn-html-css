@@ -1,0 +1,69 @@
+body {
+  background-color: #ffc;
+}
+
+/* 태그 선택자 */
+p {
+  color: red;
+
+  &:hover {
+    background-color: skyblue;
+  }
+
+  &:focus {
+    border: 10px solid red;
+  }
+}
+/* & 기호 ->  */
+
+/* 클래스 선택자 */
+.like {
+  color: green;
+}
+
+/* 아이디 선택자 */
+#lion {
+  color: blue;
+}
+
+/* 속성 선택자 */
+[title] {
+  color: saddlebrown;
+}
+
+a[href^="https://"]
+{
+  text-decoration: none;
+}
+/* [href^="http://] -> attr이라는 특성값을 가지고 있으며, 접두사로 value가 값에 포함되어 있으면 이 요소를 선택합니다.*/
+
+a[href$='pdf'] {
+  background-color: violet !important;
+}
+/* [attr$=value] -> attr이라는 특성값을 가지고 있으며, 접미사로 value가 값에 포함되어 있으면 이 요소를 선택합니다. */
+
+/* 가상 클래스 선택자 */
+a:link {
+  color: black;
+}
+/* a:link -> 한번도 방문하지 않은 사이트의 링크 색상 지정 */
+
+a:visited {
+  color: olive;
+}
+/* a:visited -> 방문한 사이트의 링크 색상 지정 */
+
+a:hover {
+  color: blue;
+}
+/* a:hover -> 마우스를 링크 위에 올렸을떄 */
+
+a:focus {
+  color: aqua;
+}
+/* a:focus -> 현재 포커스가 위치한 곳에 색상 변경 */
+
+a:active {
+  background-color: white;
+}
+/* a:active -> 클릭하는 순간에 색상 변경 */
