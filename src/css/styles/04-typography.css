@@ -14,7 +14,7 @@ body {
 /* font-weight 속성을 적용 */
 h1 {
   font-weight: 500;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 /* 요소 선택자는 상속으로 인해 크기가 커질 수 있어 조심해야 함 */
 
