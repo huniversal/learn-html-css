@@ -1,0 +1,23 @@
+/* CSS 박스모델 */
+/* 박스의 테두리 결정하기 */
+/* 안쪽 여백 설정 - padding */
+.like {
+  /* border-width: 5px;
+  border-style: double;
+  border-color: green; */
+  border: 5px solid green;
+
+  /* padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px; */
+  padding: 20px;
+  width: 150px;
+}
+
+/* width, height 속성으로 크기 지정 */
+.lion {
+  /* display: inline-block; */
+  border: 5px solid red;
+  /* width: 300px; */
+}
