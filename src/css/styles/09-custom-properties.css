@@ -1,30 +1,39 @@
 /* 전역 변수 정의 */
 :root {
-  --primary-color: #3498db;
-  --secondary-color: #2ecc71;
+  /* 주요 색상 */
+  --primary-color: var(--orange);
+  --secondary-color: var(--light-blue);
+  --accent-color: var(--yellow);
+  --border-color: var(--red);
 
+  /* 색상 팔레트 */
   --white: #fff;
   --black: #000;
   --red: #f00;
   --green: #0f0;
   --blue: #00f;
+  --orange: orange;
+  --yellow: yellow;
+  --light-blue: blue;
 
   /* size */
   --small: 0.75rem;
   --medium: 0.875rem;
   --default: 1rem;
   --large: 1.125rem;
+
+  --text12: 0.75rem;
 }
 
 .wrapper {
-  button.open {
-    --bg-color: var(--green);
-    --text-color: var(--red);
-  }
+  --font-size: var(--small);
+  --bg-color: var(--green);
+  --text-color: var(--red);
+
   button {
-    font-size: var(--font-size);
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    font-size: var(--font-size, 1rem);
+    background-color: var(--bg-color, #fff);
+    color: var(--primary-color);
   }
 
   button.close {
@@ -32,7 +41,7 @@
   }
 
   button.popup {
-    --font-size: var(--large);
+    --text-color: var(--blue);
   }
 
   button.info {
