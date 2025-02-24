@@ -5,15 +5,7 @@
 /* 박스 사이징 - box-sizing*/
 .like {
   box-sizing: border-box;
-  /* border-width: 5px;
-  border-style: double;
-  border-color: green; */
   border: 5px solid green;
-
-  /* padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 30px;
-  padding-left: 20px; */
   padding: 20px;
   width: 150px;
   margin: 50px;

@@ -44,20 +44,20 @@
     padding-right: 16px;
   }
 }
-
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
 /* ul 요소를 활용한 구조 예시 */
-
 .member-link {
   background-color: yellow;
   margin: 0;
   padding-left: 0;
   list-style-type: none;
   font-size: 0;
-  text-align: right;
+  /* text-align: right; */
   li {
     display: inline-block;
     * {
-      display: inline-block;
+      display: inherit;
       font-size: 0.875rem;
     }
   }
@@ -66,9 +66,9 @@
     text-decoration: none;
     background-color: hotpink;
     padding: 8px;
+    color: inherit;
     /* padding-left: 8px;
     padding-right: 8px; */
-    color: inherit;
   }
   span {
     margin-left: 8px;
