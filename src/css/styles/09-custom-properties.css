@@ -2,14 +2,56 @@
 :root {
   --primary-color: #3498db;
   --secondary-color: #2ecc71;
+
+  --white: #fff;
+  --black: #000;
+  --red: #f00;
+  --green: #0f0;
+  --blue: #00f;
 }
 
-.container {
-  --secondary-color: #c76e9a;
+.text-card-1 {
+  /* 지역 변수 정의 */
+  --bg-color: var(--green);
+  --border-color: var(--red);
 
-  /* --secondary-color 속성이 없을 때 대안으로 #2ecc71가 적용되도록 설정 */
+  /* --green 속성이 없을 때 대안으로 #2ecc71가 적용되도록 설정 */
   h1 {
-    background-color: var(--secondary-color, #2ecc71);
+    background-color: var(--bg-color);
     /* background-color: --secondary-color; 잘못 사용된 예제 */
   }
+  p {
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--border-color);
+  }
+}
+
+.text-card-2 {
+  /* 지역 변수 정의 */
+  --bg-color: var(--blue);
+  --border-color: var(--green);
+
+  /* --green 속성이 없을 때 대안으로 #2ecc71가 적용되도록 설정 */
+  h1 {
+    background-color: var(--bg-color);
+    /* background-color: --secondary-color; 잘못 사용된 예제 */
+  }
+  p {
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--border-color);
+  }
+}
+
+button.small {
+}
+
+button.medium {
+}
+
+button.large {
+}
+
+button.default {
 }
