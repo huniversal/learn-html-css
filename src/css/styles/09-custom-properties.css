@@ -18,23 +18,25 @@
 
 .wrapper {
   button.open {
-    --font-size: var(--small);
+    --bg-color: var(--green);
+    --text-color: var(--red);
+  }
+  button {
     font-size: var(--font-size);
+    background-color: var(--bg-color);
+    color: var(--text-color);
   }
 
   button.close {
     --font-size: var(--default);
-    font-size: var(--font-size);
   }
 
   button.popup {
     --font-size: var(--large);
-    font-size: var(--font-size);
   }
 
   button.info {
-    --font-size: var(--medium);
-    font-size: var(--font-size);
+    --bg-color: var(--white);
   }
 }
 
