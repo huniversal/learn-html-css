@@ -1,5 +1,5 @@
 :root {
-  /* 파스텔 색상 */
+  /* 기존 파스텔 색상 */
   --pastel-pink: #ffd1dc; /* 파스텔 핑크 */
   --pastel-lavender: #e6e6fa; /* 파스텔 라벤더 */
   --pastel-mint: #b2f2bb; /* 파스텔 민트 */
@@ -10,6 +10,8 @@
   --pastel-purple: #d1c4e9; /* 파스텔 퍼플 */
   --pastel-orange: #ffccbc; /* 파스텔 오렌지 */
   --pastel-gray: #cfd8dc; /* 파스텔 그레이 */
+
+  /*  */
   --pastel-peach: #ffe5b4; /* 파스텔 피치 */
   --pastel-lilac: #c8a2c8; /* 파스텔 라일락 */
   --pastel-teal: #afeeee; /* 파스텔 틸 */
