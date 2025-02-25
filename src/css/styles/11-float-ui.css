@@ -5,16 +5,17 @@ body {
 }
 
 .card {
-  background-color: pink;
+  /* 2em : 현재 font-size*2배 한다는 뜻 */
   margin: 2em;
   padding: 2em;
-  /* 2em : 현재 font-size*2배 한다는 뜻 */
-  border: 1px solid red;
+  border: 1px solid #aaa;
   border-radius: 0.5rem;
 
+  &.good-partner {
+    display: flow-root;
+  }
   /* 제목 */
   .subject {
-    background-color: skyblue;
     font-size: 1.5rem;
     font-weight: 600;
 
@@ -27,7 +28,30 @@ body {
     }
   }
 
-  img {
-    width: 100px;
+  /* 이미지 */
+  .thumbnail {
+    --radius: 50%;
+    --size: 120px;
+
+    border: 1px solid #ccc;
+    float: left;
+    margin: 1em;
+    padding: 0.625em;
+    border-radius: var(--radius);
+    width: var(--size);
+    shape-outside: circle(50%);
+
+    img {
+      border-radius: var(--radius);
+      max-width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      object-position: 0 -20px;
+    }
+  }
+
+  /* 내용 */
+  .content {
+    margin-top: 1em;
   }
 }
