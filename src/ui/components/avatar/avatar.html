@@ -23,6 +23,29 @@
   <body>
     <h1>Avatar 컴포넌트</h1>
     <h2>인터렛션이 없는 아바타 컴포넌트</h2>
+    <figure class="img-avatar">
+      <img src="/src/assets/face/face1.jpg" alt="사용자명" />
+      <figcaption class="avatar-state offline">
+        <div class="sr-only">오프라인</div>
+      </figcaption>
+    </figure>
+    <figure class="avatar">
+      <img src="/src/assets/face/face1.jpg" alt="사용자명" />
+      <figcaption class="avatar-state online">
+        <div class="sr-only">온라인</div>
+      </figcaption>
+    </figure>
+
     <h2>인터렛션이 있는 아바타 컴포넌트</h2>
+    <button
+      type="button"
+      class="btn-avatar state-offline"
+      aria-label="오프라인"
+    >
+      <img src="/src/assets/face/face1.jpg" alt="사용자명" />
+    </button>
+    <button type="button" class="btn-avatar state-online" aria-label="온라인">
+      <img src="/src/assets/face/face1.jpg" alt="사용자명" />
+    </button>
   </body>
 </html>
