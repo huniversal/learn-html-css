@@ -2,19 +2,25 @@
 
 /* 기본적으로 적용될 배경색 */
 body {
-  background: yellow;
+  background: blue;
 }
 
-/* 뷰포트 크기에 따라 적용될 배경색 */
+/* 뷰포트(600px) 크기에 따라 적용될 배경색 */
 @media (min-width: 600px) {
   body {
     background: pink;
   }
 }
+/* 뷰포트(600px) 크기에 따라 적용될 배경색 */
+@media (min-width: 1200px) {
+  body {
+    background: lime;
+  }
+}
 
 /* 가로모드에서 적용될 배경색 */
-@media (orientation: landscape) {
+/* @media (orientation: landscape) {
   body {
     background: orange;
   }
-}
+} */
