@@ -14,19 +14,39 @@
     height: 15vh;
   }
 
+  /* 메인 컨텐츠 및 사이드바 컨테이너 */
+  .content-wrapper {
+    @media (min-width: 768px) {
+      display: flow-root;
+    }
+  }
+
   /* 메인 컨텐츠 */
   .content {
     background-color: var(--pastel-aqua);
     height: 40vh;
+
+    @media (min-width: 768px) {
+      width: 50%;
+      height: 65vh;
+      float: left;
+    }
   }
 
   .sidebar {
     background-color: var(--pastel-yellow);
     height: 25vh;
+
+    @media (min-width: 768px) {
+      width: 50%;
+      height: 65vh;
+      float: right;
+    }
   }
 
   .footer {
     background-color: var(--pastel-lavender);
     height: 10vh;
+    clear: both;
   }
 }
