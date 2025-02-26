@@ -1,9 +1,7 @@
-/* 스타일 초기화 */
 body *,
 body *::after,
 body *::before {
   box-sizing: border-box;
-  /* border-box 속성을 적용하면 w/h가 padding, margin이 포함된 값이 나옴 */
 }
 
 a {
@@ -23,20 +21,29 @@ body {
 
 /* 멤버 서비스 */
 .member-service {
+  background-color: yellow;
   display: flow-root;
   a {
     float: left;
     text-transform: uppercase;
   }
-  a:nth-child(n + 2):before {
+  a:nth-child(n + 2)::before {
     content: '|';
     margin: 0 0.5em;
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    clear: both;
   }
 }
 
 /* 멤버 링크 */
 .member-link {
+  background-color: pink;
   display: flow-root;
+  float: right;
 
   li {
     float: left;
