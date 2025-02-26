@@ -23,5 +23,25 @@
   }
 }
 /* case 02 - float */
+.case-02 {
+  background-color: yellow;
+  margin: 20px;
+  width: 360px;
+  border: 2px solid red;
+  border-radius: 4px;
+
+  ul {
+    background-color: pink;
+    font-size: 0;
+    padding: 10px;
+    margin: 0 auto;
+    display: flow-root;
+  }
+  li {
+    background-color: lime;
+    margin: 10px;
+    float: left;
+  }
+}
 /* case 03 - flex */
 /* case 04 - grid */
