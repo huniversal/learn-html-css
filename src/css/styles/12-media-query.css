@@ -1,5 +1,20 @@
 @import '/src/common/best-reset.css';
 
+/* 기본적으로 적용될 배경색 */
 body {
   background: yellow;
+}
+
+/* 뷰포트 크기에 따라 적용될 배경색 */
+@media (min-width: 600px) {
+  body {
+    background: pink;
+  }
+}
+
+/* 가로모드에서 적용될 배경색 */
+@media (orientation: landscape) {
+  body {
+    background: orange;
+  }
 }
