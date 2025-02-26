@@ -2,19 +2,19 @@
 
 /* 기본적으로 적용될 배경색 */
 body {
-  background: blue;
-}
+  background: yellow;
+  font-size: 1.5rem;
 
-/* 뷰포트(600px) 크기에 따라 적용될 배경색 */
-@media (min-width: 600px) {
-  body {
+  /* 뷰포트(600px) 크기에 따라 적용될 배경색 */
+  @media (min-width: 600px) {
     background: pink;
+    font-size: 2rem;
   }
-}
-/* 뷰포트(600px) 크기에 따라 적용될 배경색 */
-@media (min-width: 1200px) {
-  body {
+
+  /* 뷰포트(600px) 크기에 따라 적용될 배경색 */
+  @media (min-width: 1200px) {
     background: lime;
+    font-size: 2.5rem;
   }
 }
 
