@@ -22,8 +22,11 @@ body *::after {
   block-size: 522px;
   /* flex-direction 속성과 flex-wrap 속성을 단축해서 지정할 때 */
   flex-flow: row wrap;
+  /* ---------------------------------- */
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
+  align-content: space-evenly;
+  /* ---------------------------------- */
 
   [class*='item'] {
     /* margin-block: 10px; */
@@ -32,7 +35,7 @@ body *::after {
     /* inline-size: 100px;
     block-size: 100px; */
     text-align: center;
-    align-content: center;
+    align-item: center;
     /* 기존의 새로 기준 가운데정렬을 지원하지않을 때 사용하던 트릭 */
     /* line-height: 100px; */
   }
