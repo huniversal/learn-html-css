@@ -25,8 +25,11 @@ body *::after {
   /* ---------------------------------- */
   justify-content: center;
   align-items: center;
-  align-content: space-evenly;
+  align-content: center;
   /* ---------------------------------- */
+  /* row-gap, column-gap을 함께 지정할 수 있는 단출 속성 */
+  /* gap : row col */
+  gap: 20px 40px;
 
   [class*='item'] {
     /* margin-block: 10px; */
