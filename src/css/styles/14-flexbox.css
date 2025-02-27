@@ -62,19 +62,30 @@ body *::after {
 
   [class^='item'] {
     border: 1px solid currentColor;
-    width: 100px;
+    /* width: 100px;
     inline-size: 100px;
-    block-size: 100px;
+    height: 100px;
+    block-size: 100px; */
     text-align: center;
     align-content: center;
+    flex-basis: 200px;
+    /* flex-shrink: 1;
+    flex-grow: 0; */
+    /* flex-grow, shrink, basis 속성으로 숏핸드 표기 */
+    /* 
+      grow -> 남는 영역만큼 확대
+      Shirnk -> 남는 영역만큼 축소
+    */
+    flex: 0 1 200px;
 
-    /* &:nth-child(even) {
+    &:nth-child(even) {
+      order: -1;
+      /* flex-grow: 2; */
+    }
+    /* 짝수번째만 앞으로 */
+    /* &:nth-child(odd) {
       order: -1;
     } */
-    /* 짝수번째만 앞으로 */
-    &:nth-child(odd) {
-      order: -1;
-    }
     /* 홀수번째만 앞으로 */
   }
 }
