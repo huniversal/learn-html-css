@@ -1,2 +1,81 @@
 @import '/src/common/best-reset.css';
-@import '/src/common/theme.css';
+
+:root {
+  --header-color: #38302e;
+  --nav-color: lightblue;
+  --main-color: lightgray;
+  --footer-color: lightyellow;
+}
+
+body *,
+body *::after,
+body *::before {
+  box-sizing: border-box;
+}
+
+.container {
+  min-width: 100px;
+
+  .header {
+    background: var(--header-color);
+    height: 17vh;
+
+    .header-service {
+      float: right;
+      margin: 20px;
+      display: flow-root;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:nth-child(n + 2):before {
+        content: '|';
+        margin: 0 0.5em;
+      }
+    }
+
+    .logo {
+      width: 12rem;
+      margin-left: 30px;
+      margin-top: 35px;
+      float: left;
+    }
+
+    .search-bar {
+      margin: 15px 20px 20px 20px;
+      clear: both;
+      float: right;
+
+      #search {
+        width: 400px;
+        height: 35px;
+        border-radius: 5px;
+      }
+      .btn {
+        width: 50px;
+        height: 35px;
+        background: #988574;
+        border-radius: 5px;
+        color: white;
+      }
+    }
+  }
+
+  .navigation {
+    background: var(--nav-color);
+    height: 15vh;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  .main-content {
+    background: var(--main-color);
+    height: 100vh;
+  }
+  .footer {
+    background: var(--footer-color);
+    height: 15vh;
+  }
+}

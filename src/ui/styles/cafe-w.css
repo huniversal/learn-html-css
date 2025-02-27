@@ -1,0 +1,53 @@
+@import '/src/common/modern-reset.css';
+
+:root {
+  --grayscale-black: #282725;
+  --grayscale-white: #fffcf9;
+}
+
+body *,
+body *::after,
+body *::before {
+  box-sizing: border-box;
+  /* border-box 속성을 적용하면 w/h가 padding, margin이 포함된 값이 나옴 */
+}
+
+body * {
+  box-sizing: border-box;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header {
+  background: var(--grayscale-black);
+  height: 5.125rem;
+  padding: 21px 120px 21px 109px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    color: var(--grayscale-white);
+    font-size: 16px;
+  }
+  a::after {
+    content: ' ';
+    margin: 0 0.5em;
+  }
+
+  .logo-img {
+    width: 100;
+    height: 40px;
+  }
+}
+
+.menu {
+  height: 12.1875rem;
+  background: var(--grayscale-black);
+}
