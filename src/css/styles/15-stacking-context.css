@@ -1,0 +1,34 @@
+@import '/src/common/best-reset.css';
+@import '/src/common/theme.css';
+@import '/src/ui/components/avatar/avatar.css';
+
+body {
+  margin: 50px;
+}
+
+h1 {
+  margin-block: 20px;
+}
+
+/* Stacking context */
+/* case 1 */
+.case-01 {
+  background: yellow;
+  display: flex;
+  flex-flow: row nowrap;
+
+  button {
+    margin-right: -20px;
+    position: static !important;
+
+    &:hover,
+    &:focus {
+      /* 아바타의 겹치는 순서를 제어하기 위해 0보다 큰 값 지정 */
+      /* z-index: 10; */
+      transform: scale(1.5);
+    }
+    &::after {
+      display: none;
+    }
+  }
+}

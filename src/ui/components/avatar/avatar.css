@@ -15,16 +15,17 @@
 
   img {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1/1;
     border-radius: var(--radius);
   }
+
   .state {
     width: 25%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1/1;
     border-radius: var(--radius);
     position: absolute;
-    bottom: 0;
     right: 0;
+    bottom: 0;
     border: 2px solid var(--state-border);
     background: var(--state);
 
@@ -33,9 +34,9 @@
     }
   }
 }
-/* -------------------------------------------- */
+
 /* 인터렉션이 있는 버튼 컴포넌트 */
-.btn-avatar {
+.button-avatar {
   --size: 4rem;
   --radius: 50%;
   --state: #dbdbdb;
@@ -50,19 +51,18 @@
 
   img {
     width: 100%;
-    height: var(--size);
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
+    aspect-ratio: 1/1;
+    border-radius: var(--radius);
   }
 
   &::after {
     content: '';
     position: absolute; /* BFC */
     width: 25%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1/1;
     border-radius: var(--radius);
-    bottom: 0;
     right: 0;
+    bottom: 0;
     border: 2px solid var(--state-border);
     background: var(--state);
   }
