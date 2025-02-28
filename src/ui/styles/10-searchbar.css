@@ -1,4 +1,12 @@
 @import '/src/common/best-reset.css';
 @import '/src/common/a11y.css';
+@import '/src/common/base.css';
 
-/* 검색 바(searchbar) */
+/* 컴포넌트 */
+
+/* 로고 컴포넌트 */
+.brand {
+  a.logo {
+    display: block;
+  }
+}
