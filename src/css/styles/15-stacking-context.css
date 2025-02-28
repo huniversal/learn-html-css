@@ -40,3 +40,36 @@ h1 {
     }
   }
 }
+
+/* Transition */
+/* case 2 */
+.case-02 {
+  margin-block-start: 20px;
+  display: flex;
+  gap: 20px;
+
+  [class^='area'] {
+    inline-size: 100px;
+    block-size: 100px;
+    border: 1px solid currentColor;
+    text-align: center;
+    align-content: center;
+    background: var(--pastel-lavender);
+    /* transition-property: background, border-radius;
+    transition-duration: 2s, 1s;
+    transition-delay: 0s, 0.2s;
+    transition-timing-function: ease; */
+
+    /* transition 관련 단축 속성 */
+    /* transition:
+      background 2s 0s ease,
+      border-radius 1s 2s ease; */
+    transition: all 200ms;
+
+    &:hover {
+      background: var(--pastel-orange);
+      border-radius: 50%;
+      rotate: 2turn;
+    }
+  }
+}
