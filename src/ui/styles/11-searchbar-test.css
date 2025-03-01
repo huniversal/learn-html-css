@@ -34,4 +34,18 @@ body {
     background: #fff;
     border-radius: 100%;
   }
+
+  .input {
+    background: yellow;
+    display: flex;
+    flex-wrap: row nowrap;
+
+    input {
+      block-size: 1.5rem;
+      border: 1px solid var(--pastel-gray);
+      font-size: 0.875rem;
+      padding: 0.125rem 0.5rem;
+      flex: 1 0 0;
+    }
+  }
 }
