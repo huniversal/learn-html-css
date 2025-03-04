@@ -24,7 +24,7 @@
     <div class="component-container">
       <h1>로고 컴포넌트</h1>
       <h2>SVG IMG 로고(svg 요소)</h2>
-      <a href="#" target="_blank" rel="noopenner noreferrer">
+      <a href="#" target="_blank" rel="noopenner noreferrer" aria-label="NAVER">
         <svg
           width="230"
           height="44"
@@ -53,6 +53,29 @@
             fill="#03CF5D"
           />
         </svg>
+      </a>
+      <hr />
+      <h2>SVG 이미지 로고 (img 요소)</h2>
+      <a href="https://www.naver.com" class="logo">
+        <img
+          src="/src/assets/naver/logo.svg"
+          width="230"
+          height="44"
+          alt="네이버"
+        />
+      </a>
+
+      <h2>이미지 로고 (srcset, sizes 속성)</h2>
+      <a href="https://www.naver.com" class="logo">
+        <img
+          srcset="
+            /src/assets/naver/logo.png     512w,
+            /src/assets/naver/logo@2x.png 1042w
+          "
+          sizes="230px"
+          src="/src/assets/naver/logo.png"
+          alt="네이버"
+        />
       </a>
     </div>
   </body>
