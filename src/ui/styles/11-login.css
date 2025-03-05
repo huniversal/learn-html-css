@@ -26,5 +26,15 @@
 
   .logo {
     margin: 0 auto;
+    /* 
+    @media (max-width: 48rem) {
+      width: 11.25rem;
+      height: 11.25rem;
+    } */
   }
+}
+
+/* login-form */
+.login-form {
+  background: pink;
 }
