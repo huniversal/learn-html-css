@@ -11,7 +11,6 @@
   display: block;
   width: var(--size, 14.375rem);
   inline-size: var(--size, 14.375rem);
-  background: yellow;
 }
 
 /* 로고 컴포넌트 (svg 요소) */
