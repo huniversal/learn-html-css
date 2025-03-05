@@ -1,0 +1,22 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+.header {
+  background-color: var(--pastel-blue);
+}
+.navigation {
+  background-color: var(--pastel-coral);
+}
+.content {
+  background-color: var(--pastel-mint);
+}
+
+.sidebar {
+  background-color: var(--pastel-yellow);
+}
+
+.footer {
+  background-color: var(--pastel-gray);
+}
