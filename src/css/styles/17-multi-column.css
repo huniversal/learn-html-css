@@ -6,51 +6,60 @@
 .container {
   background: var(--pastel-lavender);
   padding: 1em;
-}
+  .case {
+    margin-block: 20px;
+  }
 
-.case {
-  margin-block: 20px;
-}
+  /* case-01 column-width */
+  /* column-rule 속성으로 단 구분선 스타일링 */
+  .case-01 {
+    column-width: 15rem;
+    column-rule: 1px solid red;
+    column-gap: 2rem;
+  }
 
-/* case-01 column-width */
-/* column-rule 속성으로 단 구분선 스타일링 */
-.case-01 {
-  column-width: 15rem;
-  column-rule: 1px solid red;
-  column-gap: 2rem;
-}
+  /* case : column-count */
+  .case-02 {
+    column-count: 4;
+    column-rule: 1px dotted green;
 
-/* case : column-count */
-.case-02 {
-  column-count: 4;
-  column-rule: 1px dotted green;
+    /* column-span: all을 지정하기 위해서는 블록 요소여야만 합니다. */
+    span {
+      display: block;
+      column-span: all;
+      background: var(--pastel-blue);
+      color: var(--white);
+      padding: 0.5em;
+    }
+  }
 
-  /* column-span: all을 지정하기 위해서는 블록 요소여야만 합니다. */
-  span {
-    display: block;
-    column-span: all;
-    background: var(--pastel-blue);
-    color: var(--white);
-    padding: 0.5em;
+  /* case : column 단축속성에 column-width 선언 */
+  .case-03 {
+    columns: 5rem;
+    column-rule: 3px double blue;
+  }
+
+  /* case : column 단축속성에 column-count 선언 */
+  .case-04 {
+    columns: 2;
+    column-fill: balance;
+  }
+
+  /* case : column-fill : balance */
+  .case-05 {
+    column-fill: auto;
+    columns: 2;
+    height: 100px;
+    block-size: 100px;
   }
 }
 
-/* case : column 단축속성에 column-width 선언 */
-.case-03 {
-  columns: 5rem;
-  column-rule: 3px double blue;
-}
+.wrapper {
+  background: var(--pastel-lemon);
+  padding: 1em;
+  columns: 4;
 
-/* case : column 단축속성에 column-count 선언 */
-.case-04 {
-  columns: 2;
-  column-fill: balance;
-}
-
-/* case : column-fill : balance */
-.case-05 {
-  column-fill: auto;
-  columns: 2;
-  height: 100px;
-  block-size: 100px;
+  .case {
+    break-after: avoid;
+  }
 }
