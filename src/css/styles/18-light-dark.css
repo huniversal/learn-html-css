@@ -2,8 +2,14 @@
 @import '/src/common/theme.css';
 @import '/src/common/a11y.css';
 @import '/src/common/base.css';
+:root {
+  color-scheme: light dark;
+}
 
 body {
+  --dark-color: var(--pastel-coral);
+  --light-color: var(--pastel-green);
+
   background: var(--pastel-coral);
   color: #000;
   margin: 3.125rem;
@@ -11,4 +17,8 @@ body {
   @media (prefers-color-scheme: dark) {
     background: var(--pastel-dark-blue);
   }
+}
+
+h1 {
+  color: light-dark(var(--light-color), var(--dark-color));
 }
