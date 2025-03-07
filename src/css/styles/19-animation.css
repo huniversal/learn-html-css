@@ -122,3 +122,23 @@ body {
   animation: shake 1.5s infinite ease-in-out;
   animation-play-state: paused;
 }
+
+/* spin animatoin */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.case-05 .target-animation {
+  width: 9.375rem;
+  height: 9.375rem;
+  border-radius: 50%;
+  background: conic-gradient(red, green, red);
+
+  animation: spin 2s infinite linear;
+  animation-play-state: paused;
+}
