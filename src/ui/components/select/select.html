@@ -22,5 +22,21 @@
   </head>
   <body>
     <h1>Select UI</h1>
+    <h2>셀렉트 (svg 요소)</h2>
+    <div class="select">
+      <label for="select__lang" class="select__label">
+        <img src="/src/assets/icon/global.svg" alt="언어 선택 아이콘" />
+      </label>
+      <span class="select__text">한국어</span>
+      <div class="select__arrow"></div>
+      <select name="select__lang" id="select__lang">
+        <option value="kor" selected>한국어</option>
+        <option value="eng">English</option>
+      </select>
+      <div class="select__dropdown">
+        <option value="kor">한국어</option>
+        <option value="eng">English</option>
+      </div>
+    </div>
   </body>
 </html>
