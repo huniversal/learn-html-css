@@ -23,7 +23,6 @@ body {
 
 .case {
   border: 1px solid light-dark(#000, #fff);
-  border-radius: 0.5rem;
   padding: 2.5rem;
 
   button {
@@ -67,10 +66,43 @@ body {
 }
 .case-01 .target-animation {
   animation-name: fade;
-  animation-duration: 4000ms;
-  animation-iteration-count: 1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
   animation-delay: 1s;
   animation-timing-function: linear;
-  animation-fill-mode: backwards;
+  animation-fill-mode: forwards;
   /* animation-direction: alternate; */
+
+  animation: fade 3s infinite 1s linear both;
+  animation-play-state: paused;
+}
+
+/* Shrink Animation */
+@keyframes shrink {
+  0%,
+  100% {
+    width: 100%;
+  }
+  50% {
+    width: 50%;
+  }
+}
+.case-02 .target-animation {
+  animation: shrink 2s infinite ease-in-out both;
+  animation-play-state: paused;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -20px;
+  }
+}
+.case-03 .target-animation {
+  animation: bounce 2s infinite ease-in-out;
+  animation-play-state: paused;
 }
